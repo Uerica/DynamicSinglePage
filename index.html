@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SinglePage</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		
+		/* navbar */
+		.main_header{
+			background-color:#fff;
+		}
+
+		.main_header .container{
+			display: flex;
+			align-items: center;
+			box-sizing: border-box;
+			max-width: 100%;
+			margin: auto;
+			height: 10vh;
+			padding: 0 2% 0 2%;
+			box-shadow: 0px 2px 8px  rgb(112, 112, 112,0.3);
+		}
+
+		.main_header .logo{
+			width: 5%;
+		}
+		.main_header .logo img{
+			width: 100%;
+			vertical-align: middle;
+		}
+		.main_header .main_nav{
+			margin-left: auto;
+			display: flex;
+			justify-content: flex-end;
+		}
+		.main_header .main_nav a{
+			text-decoration: none;
+			color: #707070;
+			padding:5px 1em;
+			margin: 0 5px;
+			white-space:nowrap;
+			font-weight: bold;
+			position: relative;
+		}
+		.main_header .main_nav a:after{
+			content: '';
+			position: absolute;
+			left: 50%;
+			right: 50%;
+			bottom: -5px;
+			border-bottom: 1px solid #707070;
+			transition: .3s;
+		}
+		.main_header .main_nav a:hover:after{
+			left: 0%;
+			right: 0%;
+		}
+
+		/* intro */
+		.intro{
+			position: relative;
+			height: 90vh;
+		}
+
+		.intro_bg{
+			position:absolute;
+			width: 100%;
+			z-index: -1;
+			height: 110vh;
+			background: linear-gradient(to top, #FFEFBE ,#DFFEFC);
+			background-repeat: no-repeat;
+			background-size: 75% 100%;
+			transition: background-size 0.25s ease-in;
+			clip-path: polygon(0 0, 100% 0%, 100% 105%, 0% 90%);
+			box-sizing: border-box;
+		}
+
+		.intro .content{
+			display: flex;
+			justify-content:center;
+			height: 100%;
+		}
+		.intro .content .text{
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding: 5%;
+			box-sizing: border-box;
+		}
+		.intro .content .text h1{
+			font-size: 60px;
+			color:#2D9BE9;
+			line-height: 80px;
+		}
+		.intro .content .text h1:after{
+			content: "";
+			display: block;
+			border-bottom:#FFDA67 10px solid;
+			width: 50%;
+			box-shadow: 0px 2px 8px  rgb(253, 231, 104,0.78);
+		}
+		.intro .content .text p{
+			font-size: 24px;
+			color:#2D9BE9;
+			line-height: 32px;
+			margin-top: 60px;
+		}
+
+		.intro .content .pic{
+			display: flex;
+			width: 25%;
+		}
+
+		.intro .content .pic .wrap{
+			width: 100%;
+			height: 80%;
+			background-color: blueviolet;
+			display: block;
+			align-self: center;
+			position: relative;
+		}
+
+		.intro .content .pic .wrap:after{
+			content: '';
+			position: absolute;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+			right: 6%;
+			top: 5%;
+			border: 3px solid #2CDCD1;
+			box-sizing: border-box;
+		}
+
+		img{
+			width: 100%;
+			height: 100%;
+		}
+
+		/* info */
+
+		
+
+	</style>
+</head>
+<body>
+	<div class="body">
+		<!-- 1 -->
+		<div class="intro wrap">
+			<div class="intro_bg"></div>
+			<!-- navbar -->
+			<header class="main_header">
+				<div class="container">
+					<a href="#" class="logo">
+						<img src="img/elastic-elasticsearch-logo-png-transparent-1024x1024.png" alt="logo">
+					</a>
+					<nav class="main_nav">
+						<a href="#">Introduce</a>
+						<a href="#">Information</a>
+						<a href="#">Contact us</a>
+					</nav>
+				</div>
+			</header>
+
+			<div class="content">
+				<div class="text">
+					<h1>Online. Instore.
+						<br>Everywhere.</h1>
+					<p>
+						Assembly’s multi channel capability provides a unified way 
+						to accept payments online, helping businesses pay and get 
+						paid, quickly and seamlessly.Assembly’s multi channel 
+						capability provides a unified way to accept payments online,
+						helping businesses pay and get paid, quickly and seamlessly.
+					</p>
+				</div>
+				<div class="pic">
+					<div class="wrap">
+						<img src="img/pic1.png" alt="smile">
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- 2 -->
+		<div class="info wrap">
+			<div class="content">
+
+			</div>
+		</div>
+		<!-- 3 -->
+		<div class="wrap"></div>
+		<!-- 4 -->
+		<div class="wrap"></div>
+	</div>
+</body>
+</html>
